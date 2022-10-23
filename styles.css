@@ -149,6 +149,7 @@ header {
 
 .slick-dots li.slick-active button {
   background-color: var(--light-color);
+  border-radius: 50%;
 }
 
 .hero__purchase {
@@ -220,7 +221,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   margin: 0 5em;
   padding-bottom: 1.5em;
 }
@@ -234,7 +235,7 @@ header {
   display: flex;
   gap: 1em;
   align-items: center;
-
+  
   padding: 0.7em 1.7em;
   background-color: var(--light-color);
   border-radius: 2em;
@@ -247,8 +248,8 @@ header {
 .releases__title img {
   width: 1em;
 }
-
-.releases__scroller {
+/* CSS :: Scroller */
+/* .releases__scroller {
   display: grid;
   gap: 1em;
   grid-auto-flow: column;
@@ -260,12 +261,32 @@ header {
   overscroll-behavior-inline: contain;
 }
 
+.releases__snap {
+  scroll-snap-type: inline mandatory;
+} */
+/* --- End CSS:: Scroller --- */
+
+
+/*  Slick JS Scoller Styling */
+.releases__scroller .slick-track {
+  display: flex;
+  gap: 1.5em;
+}
+
+.releases__scroller {
+  display: flex;
+}
+.releases__scroller .slick-dots {
+  bottom: 0;
+}
+/* End Slick JS Styling */
+
 .releases__cover {
   padding-bottom: 2em;
 }
 
 .releases__cover > img {
-  inline-size: 100%;
+  inline-size: 90%;
 }
 
 .releases__cover p {
@@ -273,9 +294,6 @@ header {
   color: var(--light-color);
 }
 
-.releases__snap {
-  scroll-snap-type: inline mandatory;
-}
 
 /* SECTION 4 :: TRAILER */
 .trailer {
