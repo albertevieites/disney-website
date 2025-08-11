@@ -1,0 +1,12 @@
+{
+    "name": "disney-website",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "node": ">=22.0.0"
+    },
+    "scripts": {
+        "build": "echo 'Static site - no build needed'",
+        "start": "echo 'Static site ready for deployment'"
+    }
+}
